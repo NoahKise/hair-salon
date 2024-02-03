@@ -15,7 +15,7 @@
 
 ## Description
 
-This is a simple web application to help a fictional salon owner keep track of her stylists and clients. The user can create, read, update, and delete instances of both the stylist and client classes.
+This is a simple web application to help a fictional salon owner keep track of her stylists and clients. The user can create, read, update, and delete instances of both the stylist and client classes. Search functionality for all lists is included.
 
 ## Setup/Installation Requirements
 
@@ -41,7 +41,7 @@ This is a simple web application to help a fictional salon owner keep track of h
     }
 }
 ```
-* To view the project in a wed browse, navigate to the "HairSalon" directory and run `dotnet watch run`.
+* To view the project in a web browser, navigate to the "HairSalon" directory and run `dotnet watch run`.
 
 ## Known Bugs
 
