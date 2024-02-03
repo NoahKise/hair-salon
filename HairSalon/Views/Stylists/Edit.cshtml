@@ -5,9 +5,11 @@
     @using (Html.BeginForm())
     {
         @Html.HiddenFor(model => model.StylistId)
-
         @Html.EditorFor(model => model.Name, new { placeholder = "Name" })
-
+        @Html.TextBoxFor(model => model.ImageUrl, new { placeholder = "Image URL...", id = "imageUrlInput" })
+        <br />
+        @Html.TextBoxFor(model => model.Skills, new { placeholder = "Stylist Skills" })
+        <br />
         <input type="submit" value="Save" />
     }
     <button><a href="/stylists/details/@Model.StylistId">

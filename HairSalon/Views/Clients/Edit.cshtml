@@ -8,6 +8,10 @@
         <br>
         @Html.TextBoxFor(model => model.Name, new { placeholder = "Name" })
         <br>
+        @Html.TextBoxFor(model => model.ImageUrl, new { placeholder = "Image URL", id = "imageUrlInput" })
+        <br />
+        @Html.TextBoxFor(model => model.Notes, new { placeholder = "Client Notes" })
+        <br />
         <label for="StylistId">Stylist:</label>
         @Html.DropDownList("StylistId")
         <br>
