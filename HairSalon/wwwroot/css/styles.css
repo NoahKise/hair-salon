@@ -76,3 +76,22 @@ h3 {
 h4 {
     font-family: couture;
 }
+
+#stylistImage {
+    width: 15vw;
+    height: 15vw;
+}
+
+#stylistRow {
+    display: flex;
+    flex-direction: row;
+}
+
+#stylistDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+#stylistSkills {
+    width: 15vw;
+}

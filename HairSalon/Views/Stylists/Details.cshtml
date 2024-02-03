@@ -1,16 +1,22 @@
 @model HairSalon.Models.Stylist
 @using HairSalon.Models
 
-<h1>@Model.Name</h1>
-@{
-    string url = @Model.ImageUrl;
+<div id="stylistRow">
+    @{
+        string url = @Model.ImageUrl;
 
-    if (string.IsNullOrEmpty(url))
-    {
-        url = "/assets/images/placeholder.png";
+        if (string.IsNullOrEmpty(url))
+        {
+            url = "/assets/images/placeholder.png";
+        }
     }
-}
-<img src="@url" alt="stylist" />
+    <img id="stylistImage" src="@url" alt="stylist" />
+    <div id="stylistDetails">
+        <h1>@Model.Name</h1>
+        <h4 id="stylistSkills"><em>@Model.Skills</em></h4>
+    </div>
+</div>
+
 <hr />
 
 @if (@Model.Clients.Count == 0)
