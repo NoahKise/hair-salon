@@ -6,11 +6,14 @@
 
     @using (Html.BeginForm())
     {
-          @Html.DropDownList("StylistId")
-          <br />
-          @Html.TextBoxFor(model => model.Name, new { placeholder = "Name..." })
-          <br />
-          <input type="submit" value="Add client to stylist" />
-          <br />
+        @Html.DropDownList("StylistId", null, "Select a stylist")
+        <br />
+        @Html.TextBoxFor(model => model.Name, new { placeholder = "Name..." })
+        <br />
+        <input type="submit" value="Add client to stylist" />
+        <br />
+        <p>*You must select a stylist in order to create a client. If no stylists appear in the dropdown, it is because none
+            have been created. You must create a stylist before adding a client.</p>
     }
+
 </body>
