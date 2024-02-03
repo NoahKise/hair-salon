@@ -10,6 +10,8 @@
         <br />
         @Html.TextBoxFor(model => model.Name, new { placeholder = "Name..." })
         <br />
+        @Html.TextBoxFor(model => model.ImageUrl, new { placeholder = "Image URL...", id = "imageUrlInput" })
+        <br />
         <input type="submit" value="Add client to stylist" />
         <br />
         <p>*You must select a stylist in order to create a client. If no stylists appear in the dropdown, it is because none

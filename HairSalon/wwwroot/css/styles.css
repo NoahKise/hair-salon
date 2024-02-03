@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'couture';
+    src: url('../assets/fonts/couture.otf');
+}
+
 body {
     background-color: pink;
 }
@@ -48,5 +53,26 @@ a {
 
 #headerTextLinks p {
     margin-left: 3vw;
-    margin-top: -.8vw;
+    margin-top: -.5vw;
+    font-family: couture;
+}
+
+.icon {
+    width: 4vw;
+}
+
+h1 {
+    font-family: couture;
+}
+
+h2 {
+    font-family: couture;
+}
+
+h3 {
+    font-family: couture;
+}
+
+h4 {
+    font-family: couture;
 }

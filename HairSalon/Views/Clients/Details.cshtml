@@ -1,13 +1,23 @@
 @model HairSalon.Models.Client
 
 <body>
-    <h2> Client Details - @Model.Stylist.Name</h2>
+    <h2>Client Details</h2>
     <hr />
     <p>Name: @Model.Name</p>
+    <p>Stylist: @Model.Stylist.Name</p>
+    @{
+        string url = @Model.ImageUrl;
+
+        if (string.IsNullOrEmpty(url))
+        {
+            url = "/assets/images/placeholder.png";
+        }
+    }
+    <img src="@url" alt="client" />
     <a href="/clients/edit/@Model.ClientId">
-        <img src="~/assets/images/edit.svg" alt="edit icon" />
+        <img class="icon" src="~/assets/images/editIcon.png" alt="edit icon" />
     </a>
     <a href="/clients/delete/@Model.ClientId">
-        <img src="~/assets/images/deleteIcon.svg" alt="delete icon" />
+        <img class="icon" src="~/assets/images/deleteIcon.png" alt="delete icon" />
     </a>
 </body>

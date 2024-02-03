@@ -4,5 +4,7 @@
 {
     @Html.TextBoxFor(model => model.Name, new { placeholder = "Name" })
     <br>
+    @Html.TextBoxFor(model => model.ImageUrl, new { placeholder = "Image URL...", id = "imageUrlInput" })
+    <br />
     <input type="submit" value="Add new stylist" />
 }

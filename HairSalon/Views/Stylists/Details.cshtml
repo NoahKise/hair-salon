@@ -1,17 +1,17 @@
 @model HairSalon.Models.Stylist
 @using HairSalon.Models
 
-<h1>Stylist Details</h1>
-<hr />
-<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
+<h1>@Model.Name</h1>
+@{
+    string url = @Model.ImageUrl;
 
-<form asp-controller="Stylists" asp-action="Details">
-    <input type="hidden" name="stylistId" value="@ViewBag.StylistId" />
-    <p>
-        <input type="text" name="SearchString" placeholder="search" value="@ViewBag.SearchString" />
-        <input type="submit" value="Filter" />
-    </p>
-</form>
+    if (string.IsNullOrEmpty(url))
+    {
+        url = "/assets/images/placeholder.png";
+    }
+}
+<img src="@url" alt="stylist" />
+<hr />
 
 @if (@Model.Clients.Count == 0)
 {
@@ -19,20 +19,25 @@
 }
 else
 {
-    <h3>Clients:</h3>
-    <ul>
+    <h3>Clients</h3>
+    <form asp-controller="Stylists" asp-action="Details">
+    <input type="hidden" name="stylistId" value="@ViewBag.StylistId" />
+    <p>
+        <input type="text" name="SearchString" placeholder="search" value="@ViewBag.SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
     @foreach (Client client in Model.Clients)
-        {
-            <li>@Html.ActionLink($"{client.Name}", "Details", "Clients", new { id = client.ClientId })</li>
-        }
-    </ul>
+    {
+        <h4>@Html.ActionLink($"{client.Name}", "Details", "Clients", new { id = client.ClientId })</h4>
+    }
 }
 <a href="/clients/create/">
-    <img src="~/assets/images/addIcon.png" alt="add icon" />
+    <img class="icon" src="~/assets/images/addIcon.png" alt="add icon" />
 </a>
 <a href="/stylists/edit/@Model.StylistId">
-    <img src="~/assets/images/edit.svg" alt="edit icon" />
+    <img class="icon" src="~/assets/images/editIcon.png" alt="edit icon" />
 </a>
 <a href="/stylists/delete/@Model.StylistId">
-    <img src="~/assets/images/deleteIcon.svg" alt="delete icon" />
+    <img class="icon" src="~/assets/images/deleteIcon.png" alt="delete icon" />
 </a>
