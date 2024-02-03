@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "E1vbmCStghgpdsHrEXNMw/ryrUw+9F8I+KGHw6iVIWs=",
+  "Source": "HairSalon",
+  "BasePath": "_content/HairSalon",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "HairSalon/wwwroot",
+      "Source": "HairSalon",
+      "ContentRoot": "/Users/NoahKise/Desktop/HairSalon.Solution/HairSalon/wwwroot/",
+      "BasePath": "_content/HairSalon",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/NoahKise/Desktop/HairSalon.Solution/HairSalon/wwwroot/css/styles.css",
+      "SourceId": "HairSalon",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/NoahKise/Desktop/HairSalon.Solution/HairSalon/wwwroot/",
+      "BasePath": "_content/HairSalon",
+      "RelativePath": "css/styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/styles.css"
+    }
+  ]
+}
