@@ -1,0 +1,14 @@
+@model HairSalon.Models.Client
+
+<h4>Editing: @Html.DisplayFor(model => model.Name)</h4>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.ClientId)
+    <br>
+    @Html.TextBoxFor(model => model.Name, new { placeholder = "Name" })
+    <br>
+    @Html.DropDownList("StylistId")
+    <br>
+    <input type="submit" value="Save" />
+}

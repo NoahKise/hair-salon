@@ -1,0 +1,12 @@
+@model HairSalon.Models.Stylist
+
+<h4>Editing: @Html.DisplayFor(model => model.Name)</h4>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.StylistId)
+
+    @Html.EditorFor(model => model.Name, new { placeholder = "Name" })
+
+    <input type="submit" value="Save" />
+}
