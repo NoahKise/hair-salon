@@ -162,3 +162,37 @@ h4 {
 .form select {
     margin-bottom: 5px;
 }
+
+#clientImage {
+    min-width: 150px;
+    min-height: 150px;
+    width: 15vw;
+    height: 15vw;
+}
+
+#clientDetails {
+    position: relative;
+    margin-left: 20px;
+}
+
+#clientIcons {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#clientCard {
+    display: flex;
+    flex-direction: row;
+    min-width: 370px;
+    width: 50vw;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: bisque;
+    border-style: groove;
+    border-width: 5px;
+    border-color: bisque;
+    box-shadow: 3px 3px 3px white;
+    padding: 5px;
+}

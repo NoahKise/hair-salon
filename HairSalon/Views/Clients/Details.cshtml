@@ -1,23 +1,30 @@
 @model HairSalon.Models.Client
 
 <body>
-    <h2>Client Details</h2>
-    <hr />
-    <p>Name: @Model.Name</p>
-    <p>Stylist: @Model.Stylist.Name</p>
-    @{
-        string url = @Model.ImageUrl;
+    <div id="clientCard">
+        @{
+            string url = @Model.ImageUrl;
 
-        if (string.IsNullOrEmpty(url))
-        {
-            url = "/assets/images/placeholder.png";
+            if (string.IsNullOrEmpty(url))
+            {
+                url = "/assets/images/placeholder.png";
+            }
         }
-    }
-    <img src="@url" alt="client" />
-    <a href="/clients/edit/@Model.ClientId">
-        <img class="icon" src="~/assets/images/editIcon.png" alt="edit icon" />
-    </a>
-    <a href="/clients/delete/@Model.ClientId">
-        <img class="icon" src="~/assets/images/deleteIcon.png" alt="delete icon" />
-    </a>
+        <div>
+            <img id="clientImage" src="@url" alt="client" />
+        </div>
+        <div id="clientDetails">
+            <h2>@Model.Name</h2>
+            <h4>Stylist: @Model.Stylist.Name</h4>
+            <h4><em>@Model.Notes</em></h4>
+            <div id="clientIcons">
+                <a href="/clients/edit/@Model.ClientId">
+                    <img class="icon" src="~/assets/images/editIcon.png" alt="edit icon" />
+                </a>
+                <a href="/clients/delete/@Model.ClientId">
+                    <img class="icon" src="~/assets/images/deleteIcon.png" alt="delete icon" />
+                </a>
+            </div>
+        </div>
+    </div>
 </body>

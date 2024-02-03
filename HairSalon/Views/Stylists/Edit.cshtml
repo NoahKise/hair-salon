@@ -1,12 +1,16 @@
 @model HairSalon.Models.Stylist
+<div class="form">
+    <h4>Editing: @Html.DisplayFor(model => model.Name)</h4>
 
-<h4>Editing: @Html.DisplayFor(model => model.Name)</h4>
+    @using (Html.BeginForm())
+    {
+        @Html.HiddenFor(model => model.StylistId)
 
-@using (Html.BeginForm())
-{
-    @Html.HiddenFor(model => model.StylistId)
+        @Html.EditorFor(model => model.Name, new { placeholder = "Name" })
 
-    @Html.EditorFor(model => model.Name, new { placeholder = "Name" })
-
-    <input type="submit" value="Save" />
-}
+        <input type="submit" value="Save" />
+    }
+    <button><a href="/stylists/details/@Model.StylistId">
+            <p>Back to Client Details</p>
+        </a></button>
+</div>
