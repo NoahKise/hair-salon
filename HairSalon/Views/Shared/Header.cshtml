@@ -1,9 +1,29 @@
-<a href="/">
-    <h1>Eau Claire's Salon</h1>
-</a>
-<li>
-    @Html.ActionLink("View Stylists", "Index", "Stylists", null)
-</li>
-<li>
-    @Html.ActionLink("View Clients", "Index", "Clients", null)
-</li>
+<div id="navbar">
+    <div id="headerLogos">
+        <a href="/">
+            <img id="hairLogo" src="~/assets/images/hairLogo.png" alt="hair logo">
+        </a>
+        <a href="/">
+            <img src="~/assets/images/textLogo.png" alt="hair logo">
+        </a>
+    </div>
+    <div id="headerRight">
+        <div id="headerIcons">
+            <a href="/stylists">
+                <img src="~/assets/images/stylistsIcon.png" alt="stylists icon">
+            </a>
+            <a href="/clients">
+                <img src="~/assets/images/clientsIcon.png" alt="clients icon">
+            </a>
+        </div>
+        <div id="headerTextLinks">
+            <a href="/stylists">
+                <p>STYLISTS</p>
+            </a>
+            <a href="/clients">
+                <p id="headerClientsTextLink">CLIENTS</p>
+            </a>
+        </div>
+    </div>
+</div>
+<hr>

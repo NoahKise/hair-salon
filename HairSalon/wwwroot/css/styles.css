@@ -1,0 +1,52 @@
+body {
+    background-color: pink;
+}
+
+#headerLogos img {
+    height: 17vw;
+}
+
+#headerIcons {
+    display: flex;
+    flex-direction: row;
+}
+
+#headerIcons img {
+    margin-top: 3vw;
+    margin-left: 2vw;
+    height: 10vw;
+    filter: brightness(100);
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navbar p {
+    color: white;
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+#hairLogo {
+    margin-left: -4vw;
+}
+
+#headerTextLinks {
+    display: flex;
+    flex-direction: row;
+    font-size: 5vw;
+}
+
+#headerTextLinks p {
+    margin-left: 3vw;
+    margin-top: -.8vw;
+}
