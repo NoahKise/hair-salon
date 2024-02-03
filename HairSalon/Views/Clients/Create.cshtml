@@ -2,22 +2,24 @@
 @model HairSalon.Models.Client
 
 <body>
-    <h3>Add a new client</h3>
+    <div class="form">
+        <h2>New client</h2>
 
-    @using (Html.BeginForm())
-    {
-        @Html.DropDownList("StylistId", null, "Select a stylist")
-        <br />
-        @Html.TextBoxFor(model => model.Name, new { placeholder = "Name" })
-        <br />
-        @Html.TextBoxFor(model => model.ImageUrl, new { placeholder = "Image URL", id = "imageUrlInput" })
-        <br />
-        @Html.TextBoxFor(model => model.Notes, new { placeholder = "Client Notes" })
-        <br />
-        <input type="submit" value="Add client to stylist" />
-        <br />
-        <p>*You must select a stylist in order to create a client. If no stylists appear in the dropdown, it is because none
-            have been created. You must create a stylist before adding a client.</p>
-    }
-
+        @using (Html.BeginForm())
+        {
+            @Html.DropDownList("StylistId", null, "Select a stylist")
+            <br />
+            @Html.TextBoxFor(model => model.Name, new { placeholder = "Name" })
+            <br />
+            @Html.TextBoxFor(model => model.ImageUrl, new { placeholder = "Image URL", id = "imageUrlInput" })
+            <br />
+            @Html.TextBoxFor(model => model.Notes, new { placeholder = "Client Notes" })
+            <br />
+            <input type="submit" value="Add client to stylist" />
+            <br />
+            <p>*You must select a stylist in order to create a client. If no stylists appear in the dropdown, it is because
+                none
+                have been created. You must create a stylist before adding a client.</p>
+        }
+    </div>
 </body>

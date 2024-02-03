@@ -1,12 +1,14 @@
 @model HairSalon.Models.Stylist
-<h4>Add a new stylist</h4>
-@using (Html.BeginForm())
-{
-    @Html.TextBoxFor(model => model.Name, new { placeholder = "Name" })
-    <br>
-    @Html.TextBoxFor(model => model.ImageUrl, new { placeholder = "Image URL...", id = "imageUrlInput" })
-    <br />
-    @Html.TextBoxFor(model => model.Skills, new { placeholder = "Stylist Skills" })
-    <br />
-    <input type="submit" value="Add new stylist" />
-}
+<div class="form">
+    <h2>New stylist</h2>
+    @using (Html.BeginForm())
+    {
+        @Html.TextBoxFor(model => model.Name, new { placeholder = "Name" })
+        <br>
+        @Html.TextBoxFor(model => model.ImageUrl, new { placeholder = "Image URL...", id = "imageUrlInput" })
+        <br />
+        @Html.TextBoxFor(model => model.Skills, new { placeholder = "Stylist Skills" })
+        <br />
+        <input type="submit" value="Add new stylist" />
+    }
+</div>

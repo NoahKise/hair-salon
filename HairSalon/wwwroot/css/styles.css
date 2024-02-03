@@ -58,7 +58,7 @@ a {
 }
 
 .icon {
-    width: 4vw;
+    width: 45px;
 }
 
 h1 {
@@ -78,6 +78,8 @@ h4 {
 }
 
 #stylistImage {
+    min-width: 150px;
+    min-height: 150px;
     width: 15vw;
     height: 15vw;
 }
@@ -85,13 +87,78 @@ h4 {
 #stylistRow {
     display: flex;
     flex-direction: row;
+    min-width: 370px;
+    width: 50vw;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: bisque;
+    border-style: groove;
+    border-width: 5px;
+    border-color: bisque;
+    box-shadow: 3px 3px 3px white;
+    padding: 5px;
 }
 
 #stylistDetails {
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+#stylistDetails h1 {
+    margin-bottom: 0;
+}
+
+#stylistDetails h4 {
+    margin-top: 0;
+}
+
+.cardIcons {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin-top: 5px;
 }
 
 #stylistSkills {
-    width: 15vw;
+    min-width: 200px;
+    width: 25vw;
+}
+
+#clientsRow {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#clientsRow img {
+    margin-left: 15px;
+    margin-top: 7px;
+}
+
+.list {
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 350px;
+    text-align: center;
+}
+
+.form {
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 350px;
+    text-align: center;
+}
+
+.form input {
+    margin-bottom: 5px;
+}
+
+.form select {
+    margin-bottom: 5px;
 }
