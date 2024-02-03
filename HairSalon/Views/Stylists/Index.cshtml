@@ -1,6 +1,11 @@
 @using HairSalon.Models;
 <div class="list">
-    <h1>Stylists</h1>
+    <div class="indexRow">
+        <h1>Stylists</h1>
+        <a href="/stylists/create/">
+            <img class="icon" src="~/assets/images/addIcon.png" alt="add icon" />
+        </a>
+    </div>
     <form asp-controller="Stylists" asp-action="Index">
         <p>
             <input type="text" name="SearchString" placeholder="search" />
@@ -16,5 +21,4 @@
     {
         <h3>@Html.ActionLink($"{@stylist.Name}", "Details", new { id = stylist.StylistId })</h3>
     }
-    @Html.ActionLink("Add new stylist", "Create", "Stylists", null)
 </div>
