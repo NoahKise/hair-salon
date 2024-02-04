@@ -30,6 +30,9 @@
     @if (@Model.Clients.Count == 0)
     {
         <h3>No clients have been added to this stylist yet!</h3>
+        <a href="/clients/create/">
+            <img class="icon" src="~/assets/images/addIcon.png" alt="add icon" />
+        </a>
     }
     else
     {

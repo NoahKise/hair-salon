@@ -38,7 +38,7 @@ CREATE TABLE `clients` (
 
 LOCK TABLES `clients` WRITE;
 /*!40000 ALTER TABLE `clients` DISABLE KEYS */;
-INSERT INTO `clients` VALUES (11,'Noah',8,NULL,'Very curly hair, needs thorough shampoo, pays cash, tips well'),(12,'Apu',9,'https://media.npr.org/assets/img/2018/04/09/simp_2609_tabf09-sc1107_hires2_sq-50e6a6e1f4c396093524f7cbfc21e158522d5c59.jpg','Runs Kwik-E-Mart, sensitive about moustache');
+INSERT INTO `clients` VALUES (11,'Noah',8,'https://media.licdn.com/dms/image/D5603AQEGnHnJdO_RFQ/profile-displayphoto-shrink_400_400/0/1701378934352?e=1712793600&v=beta&t=Sn4eqLkgJiOWunN2-EpCZC--bmNW3LzLBEmSgUTAhHU','Very curly hair, needs thorough shampoo, pays cash, tips well'),(12,'Apu',9,'https://media.npr.org/assets/img/2018/04/09/simp_2609_tabf09-sc1107_hires2_sq-50e6a6e1f4c396093524f7cbfc21e158522d5c59.jpg','Runs Kwik-E-Mart, sensitive about moustache');
 /*!40000 ALTER TABLE `clients` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -77,4 +77,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-02-03 16:11:10
+-- Dump completed on 2024-02-03 16:18:40
