@@ -29,7 +29,7 @@ CREATE TABLE `clients` (
   `ImageUrl` varchar(2000) DEFAULT NULL,
   `Notes` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`ClientId`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `clients` (
 
 LOCK TABLES `clients` WRITE;
 /*!40000 ALTER TABLE `clients` DISABLE KEYS */;
-INSERT INTO `clients` VALUES (11,'Noah',8,'https://media.licdn.com/dms/image/D5603AQEGnHnJdO_RFQ/profile-displayphoto-shrink_400_400/0/1701378934352?e=1712793600&v=beta&t=Sn4eqLkgJiOWunN2-EpCZC--bmNW3LzLBEmSgUTAhHU','Very curly hair, needs thorough shampoo, pays cash, tips well'),(12,'Apu',9,'https://media.npr.org/assets/img/2018/04/09/simp_2609_tabf09-sc1107_hires2_sq-50e6a6e1f4c396093524f7cbfc21e158522d5c59.jpg','Runs Kwik-E-Mart, sensitive about moustache');
+INSERT INTO `clients` VALUES (11,'Noah',8,'https://media.licdn.com/dms/image/D5603AQEGnHnJdO_RFQ/profile-displayphoto-shrink_400_400/0/1701378934352?e=1712793600&v=beta&t=Sn4eqLkgJiOWunN2-EpCZC--bmNW3LzLBEmSgUTAhHU','Very curly hair, needs thorough shampoo, pays cash, tips well'),(12,'Apu',9,'https://media.npr.org/assets/img/2018/04/09/simp_2609_tabf09-sc1107_hires2_sq-50e6a6e1f4c396093524f7cbfc21e158522d5c59.jpg','Runs Kwik-E-Mart, sensitive about moustache'),(13,'Ralph Wiggum',12,'https://upload.wikimedia.org/wikipedia/en/1/14/Ralph_Wiggum.png','Just happy to be here. Dad is chief of police.'),(14,'Milhouse',10,'https://i.kym-cdn.com/entries/icons/facebook/000/017/519/Milhouse_Van_Houten.jpg','Needs regular color appointments to maintain blue hair.'),(15,'Moe Szyslak',9,'https://www.gyfted.me/_next/image?url=%2Fimg%2Fcharacters%2Fmoe-szyslak.png&w=640&q=75','Free haircuts, stylist has open tab at client\'s bar.'),(16,'Clancy Wiggum',9,'https://www.giantbomb.com/a/uploads/scale_medium/0/9493/2497402-chief-wiggum.gif','Has good stories, gets free shaves while on duty because of what Bart did...');
 /*!40000 ALTER TABLE `clients` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -77,4 +77,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-02-03 16:18:40
+-- Dump completed on 2024-02-03 16:31:39
