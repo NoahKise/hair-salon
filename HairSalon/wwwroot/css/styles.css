@@ -217,3 +217,7 @@ h4 {
     margin-right: auto;
     text-align: justify;
 }
+
+#clientName {
+    color: rgb(81, 14, 123);
+}
