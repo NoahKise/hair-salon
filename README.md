@@ -41,6 +41,7 @@ This is a simple web application to help a fictional salon owner keep track of h
     }
 }
 ```
+* Optionally, you can set up the local database from the `noah_kise_sample_data_included.sql` file instead to have some sample data already included, to make it easier to test and view features without inputting your own data first. 
 * To view the project in a web browser, navigate to the "HairSalon" directory and run `dotnet watch run`.
 
 ## Known Bugs
